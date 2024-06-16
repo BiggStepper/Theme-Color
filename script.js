@@ -1,3 +1,5 @@
+
+// variable declaration 
 const body = document.body;
 const themeIcon = document.getElementById('themeIcon');
 const colorPaletteIcon = document.getElementById('colorPaletteIcon');
@@ -15,6 +17,7 @@ const menu = document.getElementById('menu');
 const sideBar = document.querySelector('aside');
 const main = document.querySelector('main');
 
+// function for dark and white color them
 function changeTheme() {
 
   if (body.style.backgroundColor === 'white') {
@@ -32,9 +35,11 @@ function changeTheme() {
   }
 }
 
+// dark and white them color function call
 themeIcon.addEventListener('click', ()=>  changeTheme());
 
 
+// code function for color palette
 colorPaletteIcon.addEventListener('click', ()=> {
 
   if(colorSwitcher.style.display === "block") {
@@ -48,6 +53,7 @@ colorPaletteIcon.addEventListener('click', ()=> {
   }
 });
 
+// code for the individual colors
 color1.addEventListener('click', ()=> {
   header.style.backgroundColor = "rgb(51, 51, 255)";
   button.style.backgroundColor = "rgb(51, 51, 255)";
@@ -106,5 +112,6 @@ main.addEventListener('click', ()=> {
   sideBar.style.display = "none";
 })
 
+// code for navigation menu when @media screen and (max-width: 600px)
 sideBar.addEventListener('click', () => sideBar.style.display = "none");
 
