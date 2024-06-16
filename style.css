@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* style for page body */
 body {
   transition: 0.8s;
   border: 0;
@@ -7,6 +8,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* stylig for page header */
 header {
   top: 0;
   left: 0;
@@ -20,6 +22,7 @@ header {
   background: rgb(51, 51, 255);
 }
 
+/* styling for page title */
 header div:first-child {
   text-wrap: nowrap;
   width: 28%;
@@ -32,6 +35,7 @@ h2 {
   color: white;
 }
 
+/* styling for nav bar */
 header nav {
   flex-grow: inherit;
   flex: 1;
@@ -95,6 +99,7 @@ header div:last-child span:last-child i:last-child {
  font-size: 15px;
 } 
 
+/* styling for navigation menu when @media screen and (max-width: 600px) */
 aside {
   display: none;
   background: rgb(51, 51, 255);
@@ -167,6 +172,7 @@ aside nav ul li a {
   margin: 2.6px 1.9px;
 }
 
+/* styling for the various different colors */
 .div1 {
   border: 2px solid rgb(51, 51, 255);
 }
@@ -221,6 +227,7 @@ main article #colors {
   color: rgb(51, 51, 255);
 }
 
+/* styling for explore more burtton */
 button {
   cursor: pointer;
   font-weight: 900;
@@ -237,7 +244,7 @@ button span i{
   rotate: 45deg;
 }
 
-
+/* styling for media query */
 @media screen and (max-width: 600px) {
 
   header {
